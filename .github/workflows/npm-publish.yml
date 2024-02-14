@@ -20,9 +20,9 @@ jobs:
 
       - name: Run tests (If exists)
         run: |
-        if [[ ! -z $(npm show . scripts.test) ]]; then
-          npm run test
-        fi
+          if [[ ! -z $(npm show . scripts.test) ]]; then
+            npm run test
+          fi
 
       - name: Build the project
         run: npm run build
